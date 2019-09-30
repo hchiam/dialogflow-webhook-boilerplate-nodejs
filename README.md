@@ -35,6 +35,7 @@ Select the button below and follow prompts to create a new agent:
     ```
     Function URL (dialogflowFirebaseFulfillment): https://${REGION}-${PROJECT_ID}.cloudfunctions.net/dialogflowFirebaseFulfillment
     ```
+    * The URL from the `firebase deploy` output should match the above format. If it doesn't, you can find the correct URL in Firebase > (Your project) > Develop > Functions > Dashboard > Trigger (something like `https://us-central1-<...>.cloudfunctions.net/<yourAction></yourAction>`). Copy just this part: `https://us-central1-<...>.cloudfunctions.net/`
 1. From the left navigation menu, click **Integrations** > **Integration Settings** under Google Assistant > Enable **Auto-preview changes** >  **Test** to open the Actions on Google simulator then say or type `Talk to my test app`. 
  
 ### Running this Sample
